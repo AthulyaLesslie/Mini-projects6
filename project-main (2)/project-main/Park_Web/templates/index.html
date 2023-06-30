@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parkinson's Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Parkinson's Disease Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="fo">MDVP:Fo(Hz):</label>
+        <input type="text" id="fo" name="fo"><br><br>
+
+        <label for="flo">MDVP:Flo(Hz):</label>
+        <input type="text" id="flo" name="flo"><br><br>
+
+        <label for="shimmer">MDVP:Shimmer:</label>
+        <input type="text" id="shimmer" name="shimmer"><br><br>
+
+        <label for="dfa">DFA:</label>
+        <input type="text" id="dfa" name="dfa"><br><br>
+
+        <label for="d2">D2:</label>
+        <input type="text" id="d2" name="d2"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
